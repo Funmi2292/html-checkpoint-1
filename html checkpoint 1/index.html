@@ -3,77 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <!-- Navigation Bar  -->
+     
      <header>
-        <nav>
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#work">work</a></li>
-                <li><a href="#resume">resume</a></li>
-                <li><a href="#contact">contact</a> </li>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">home</a></li>
+                <li class="nav-item"><a href="#about">about</a></li>
+                <li class="nav-item"><a href="#work">work</a></li>
+                <li class="nav-item"><a href="#resume">resume</a></li>
+                <li class="nav-item"><a href="#contact">contact</a> </li>
             </ul>
         </nav>
      </header>
 
      <!-- Home section -->
-      <section id="home">
-        <h1>Hello, I'm glad you're here!</h1>
-        <p>Explore my journey as a web developer and see what I've been working on.</p>
-      </section>
+
+     <section class="home-section" id="home">
+  <div class="home-content">
+    <h1>I'm glad you're here!</h1>
+    <p>Explore my journey as a web developer and see what I've been working on.</p>
+  </div>
+</section>
+     
 
       <!-- About section -->
-       <section id="about">
+       <section class="about-section" id="about">
         <h2>About Me</h2>
         <p>As a beginner in web development, I'm gaining strong foundational skills in HTML and CSS to build beautiful and functional websites.</p>
+        </section>
 
-       <audio controls>
-      <source src="WhatsApp Audio .mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
+        <!-- Multimedia Section -->
+<section class="multimedia-section" id="media">
+  <h2>Multimedia</h2>
+
+  <audio controls>
+    <source src="WhatsApp-Audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+<br>
+  <video width="320" height="240" controls>
+    <source src="WhatsApp-Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+    
 
         <!-- Work Section -->
-         <section id="work">
+         <section class="work-section" id="work">
             <h2>Projects</h2>
             <ul>
                 <li>Created my first HTML portfolio page</li>
                 <li>Used semantic HTML for better structure</li>
                 <li>Learned how to embed multimedia in web pages</li>
             </ul>
+            </section>
          
-<!-- Video -->
-    <video width="320" height="240" controls>
-      <source src="WhatsApp Video .mp4" type="video/mp4">
-    </video>
-    </section>
-         <!--Resume Session  -->
-         <section id="resume">
-            <h2>resume</h2>
-            <table border="1">
-                 <thead>
-                     <tr>
-          <th>Year</th>
-          <th>Experience</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <td>2025</td>
-          <td>Started Web Development Training at GOMYCODE</td>
-        </tr>
-        <tr>
-          <td>2026</td>
-          <td>Built several HTML/CSS projects</td>
-          </tr>
-      </tbody>
-    </table>
-  </section>
+    
+
+  <!-- Resume Section -->
+<section class="resume-section" id="resume">
+  <h2>resume</h2>
+
+  <table class="resume-table">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025</td>
+        <td>Started Web Development Training at GOMYCODE</td>
+      </tr>
+      <tr>
+        <td>2026</td>
+        <td>Built several HTML/CSS projects</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
    <!-- Contact Section -->
-  <section id="contact">
+  <section class="contact-section" id="contact">
     <h2>Contact Me</h2>
     <form>
       <label for="name">Name:</label><br />
